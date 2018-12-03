@@ -1,0 +1,16 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions
+
+Public class TestGBH {
+
+@Before
+Public void prepare() {               
+SetbaseURL(“http://www.gbh.com.do”);} 
+
+@Test 
+Public void TestMenus() {
+Menus gbhmenu = new Menus (“Home”,”Services”, “Porfolio”, “AboutUs”, “Jobs”, “Blog”);
+String MenuTitle = gbhmenu.getMenuTitle();
+assertTitleEquals(“Home”,”Services”, “Porfolio”, “AboutUs”, “Jobs”, “Blog”, MenuTitle);
+} 
+ } 
